@@ -1,0 +1,10 @@
+color railscasts
+set   guifont=Monaco:h16
+set   antialias
+
+" Whitespace stuff
+autocmd FileType javascript set tabstop=4
+
+" recognize unusual filetypes
+au BufNewFile,BufRead *.watchr set filetype=ruby
+au BufNewFile,BufRead Guardfile set filetype=ruby
