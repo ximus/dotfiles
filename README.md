@@ -6,6 +6,19 @@ These are config files to set up a system the way I like it. These files were fo
 
 ## Installation
 
+You should backup the following type of dotfiles:
+
+* .bashrc
+* .bash_profile
+* .gitconfig
+* .vimrc
+* .vim/
+* .gvimrc
+* etc.
+
+Note: You will be prompted before any file or folder is overwritten. Which gives you a chance
+to backup that file at the last minute.
+
     git clone git://github.com/ryanb/dotfiles ~/.dotfiles
     cd ~/.dotfiles
     rake install

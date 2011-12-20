@@ -13,7 +13,7 @@ task :install do
       elsif replace_all
         replace_file(file)
       else
-        print "overwrite ~/.#{file.sub('.erb', '')}? [ynaq] "
+        print "~/.#{file.sub('.erb', '')} already exists. replace it? [y]es, [n]o, replace [a]ll, [q]uit "
         case $stdin.gets.chomp
         when 'a'
           replace_all = true
