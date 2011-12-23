@@ -16,8 +16,8 @@ You should backup the following type of dotfiles:
 * .gvimrc
 * etc.
 
-Note: You will be prompted before any file or folder is overwritten. Which gives you a chance
-to backup that file at the last minute.
+Note: You will be prompted before any file or folder is overwritten and
+you will have an option to create a backup of each file.
 
     git clone git://github.com/ryanb/dotfiles ~/.dotfiles
     cd ~/.dotfiles

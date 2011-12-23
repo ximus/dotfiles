@@ -7,3 +7,17 @@ source ~/.bash/config
 if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
+
+export USE_BUNDLER=force
+
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
+
+[[ -s "/Users/alexokolish/.rvm/scripts/rvm" ]] && source "/Users/alexokolish/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+mvim()
+{
+  (unset GEM_PATH GEM_HOME; command mvim "$@")
+}
+
