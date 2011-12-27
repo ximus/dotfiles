@@ -14,7 +14,7 @@ if [ -f `brew --prefix`/etc/autojump ]; then
   . `brew --prefix`/etc/autojump
 fi
 
-[[ -s "/Users/alexokolish/.rvm/scripts/rvm" ]] && source "/Users/alexokolish/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 mvim()
 {
