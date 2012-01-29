@@ -20,6 +20,10 @@ au BufNewFile,BufRead Guardfile set filetype=ruby
 " insert curly braces like textmate does for css files
 autocmd FileType css,scss inoremap { {<Esc>o}<Esc>ko
 
+" commands to enter blank lines and stay in normal mode
+nnoremap - o<esc>k
+nnoremap _ O<esc>j
+
 " insert hashrocket
 " autocmd FileType rails inoremap {      {<CR><CR>}<Left><Up><Tab>
 "
