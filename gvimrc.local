@@ -22,7 +22,7 @@ autocmd FileType css,scss inoremap { {<Esc>o}<Esc>ko
 
 " insert hashrocket
 " autocmd FileType rails inoremap {      {<CR><CR>}<Left><Up><Tab>
-
-
-
-au BufNewFile,BufRead *.isml set filetype=jsp
+"
+"
+set exrc			" enable per-directory .vimrc files
+set secure			" disable unsafe commands in local .vimrc files
