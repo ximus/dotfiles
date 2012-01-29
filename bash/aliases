@@ -14,3 +14,7 @@ function railsapp {
 # misc
 alias reload='. ~/.bash_profile'
 alias r='rails'
+alias be='bundle exec'
+
+# python
+alias ps='python manage.py runserver'
