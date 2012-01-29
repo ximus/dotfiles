@@ -161,5 +161,5 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
-au BufNewFile,BufRead *.isml set filetype=jsp
+au BufNewFile,BufRead *.isml set filetype=isml
 
