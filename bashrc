@@ -21,3 +21,4 @@ mvim()
   (unset GEM_PATH GEM_HOME; command mvim "$@")
 }
 
+export EDITOR=mvim
