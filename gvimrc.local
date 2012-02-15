@@ -24,6 +24,9 @@ autocmd FileType css,scss inoremap { {<Esc>o}<Esc>ko
 nnoremap - o<esc>k
 nnoremap _ O<esc>j
 
+" clear search highlighting by pressing return
+nnoremap <CR> :noh<return><esc>
+
 " insert hashrocket
 " autocmd FileType rails inoremap {      {<CR><CR>}<Left><Up><Tab>
 "
