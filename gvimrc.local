@@ -18,7 +18,7 @@ au BufNewFile,BufRead Guardfile set filetype=ruby
 
 " remaps for insert mode (by filetype)
 " insert curly braces like textmate does for css files
-autocmd FileType css,scss inoremap { {<Esc>o}<Esc>ko
+" autocmd FileType css,scss inoremap { {<Esc>o}<Esc>ko
 
 " commands to enter blank lines and stay in normal mode
 nnoremap - o<esc>k
