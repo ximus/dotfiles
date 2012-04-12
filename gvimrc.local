@@ -27,6 +27,12 @@ nnoremap _ O<esc>j
 " clear search highlighting by pressing return
 nnoremap <CR> :noh<return><esc>
 
+" Maps to make handling windows a bit easier
+noremap <silent> ,h :wincmd h<CR>
+noremap <silent> ,j :wincmd j<CR>
+noremap <silent> ,k :wincmd k<CR>
+noremap <silent> ,l :wincmd l<CR>
+
 " insert hashrocket
 " autocmd FileType rails inoremap {      {<CR><CR>}<Left><Up><Tab>
 "
