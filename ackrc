@@ -4,4 +4,6 @@
 --type-set=haml=.haml
 --type-set=isml=.isml
 
---type-add=ruby=.rake
+--type-set=coffee=.coffee
+
+--type-add=ruby=.rake,.feature,.erb
