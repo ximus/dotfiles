@@ -73,8 +73,10 @@ set visualbell
 " Start without the toolbar
 set guioptions-=T
 
-" Default gui color scheme
-color ir_black
+" Default gui color and font
+color railscasts
+set   guifont=Monaco:h15
+set   antialias
 
 " ConqueTerm wrapper
 function StartTerm()

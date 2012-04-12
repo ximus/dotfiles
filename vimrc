@@ -64,6 +64,7 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
+" wrapping just used for markdown
 function s:setupWrapping()
   set wrap
   set wrapmargin=2
@@ -76,7 +77,7 @@ function s:setupMarkup()
 endfunction
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,*.watchr,Guardfile}    set ft=ruby
 
 " 
 au BufRead,BufNewFile *.scss.erb    set ft=scss
@@ -86,8 +87,6 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
-
-au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -132,7 +131,7 @@ let g:gist_open_browser_after_post = 1
 set modeline
 set modelines=10
 
-" Default color scheme
+" Default color ucheme
 color ir_black
 
 " Directories for swp files

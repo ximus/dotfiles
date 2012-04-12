@@ -1,25 +1,3 @@
-color railscasts
-set   guifont=Monaco:h15
-set   antialias
-
-" Whitespace stuff
-autocmd FileType javascript set tabstop=4
-
-" recognize unusual filetypes
-au BufNewFile,BufRead *.watchr set filetype=ruby
-au BufNewFile,BufRead Guardfile set filetype=ruby
-
-" remaps for insert mode
-" insert closing parens, brackets, and quotes by default
-" inoremap {      {}<Left>
-" inoremap (      ()<Left>
-" inoremap [      []<Left>
-" inoremap '      ''<Left>
-
-" remaps for insert mode (by filetype)
-" insert curly braces like textmate does for css files
-" autocmd FileType css,scss inoremap { {<Esc>o}<Esc>ko
-
 " commands to enter blank lines and stay in normal mode
 nnoremap - o<esc>k
 nnoremap _ O<esc>j
@@ -33,9 +11,5 @@ noremap <silent> ,j :wincmd j<CR>
 noremap <silent> ,k :wincmd k<CR>
 noremap <silent> ,l :wincmd l<CR>
 
-" insert hashrocket
-" autocmd FileType rails inoremap {      {<CR><CR>}<Left><Up><Tab>
-"
-"
 set exrc			" enable per-directory .vimrc files
 set secure			" disable unsafe commands in local .vimrc files
